@@ -1,10 +1,8 @@
-# Similarity-Detection-in-Questions
-
-DataSet Link : https://www.kaggle.com/c/quora-question-pairs
-
 # 🧠 Bag of Words with Preprocessing and Advanced Features
 
 This project demonstrates a complete text preprocessing and feature extraction pipeline using the **Bag of Words (BoW)** model. It includes advanced text cleaning, normalization, and tokenization techniques designed to prepare raw text data for machine learning models.
+
+DataSet Link : https://www.kaggle.com/c/quora-question-pairs
 
 ---
 
@@ -59,18 +57,6 @@ This notebook walks through the process of:
 
 ---
 
-## 📁 File Structure
-
-```
-.
-├── bow-with-preprocessing-and-advanced-features.ipynb
-├── train.csv
-├── README.md
-└── (optional) screenshots/
-```
-
----
-
 ## ✨ Preprocessing Highlights
 
 The `preprocess()` function performs:
@@ -106,9 +92,7 @@ Add charts to show:
 - Top 20 most frequent unigrams and bigrams
 - Comparison of CountVectorizer vs TfidfVectorizer outputs
 
-> You can add screenshots like:
-> 
-> ![Example Preprocessing](screenshots/preprocessing.png)
+<img width="954" height="795" alt="image" src="https://github.com/user-attachments/assets/a0a72145-c26d-49ee-b40d-3c61935f0032" />
 
 ---
 
@@ -125,15 +109,3 @@ Add charts to show:
 1. Fork the repo
 2. Create a new branch: `feature/your-feature-name`
 3. Submit a pull request
-
----
-
-## 📜 License
-
-Licensed under the [MIT License](LICENSE).
-
----
-
-## 💬 Feedback
-
-If you have any feedback or suggestions, feel free to open an issue or reach out!
