@@ -60,6 +60,7 @@ This notebook walks through the process of:
 ##  Preprocessing Highlights
 
 -The preprocessing pipeline includes:
+
 -Lowercasing text
 -Removing special characters, digits, HTML tags
 -Replacing common currency/number symbols (e.g., $ → dollar, ₹ → rupee)
