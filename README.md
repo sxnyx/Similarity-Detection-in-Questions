@@ -59,22 +59,23 @@ This notebook walks through the process of:
 
 ##  Preprocessing Highlights
 
--The preprocessing pipeline includes:
+The preprocessing pipeline includes:
 
--Lowercasing text
--Removing special characters, digits, HTML tags
--Replacing common currency/number symbols (e.g., $ → dollar, ₹ → rupee)
--Decontracting (e.g., "won't" → "will not")
--Tokenization and stemming (if needed)
--Removing stopwords (optional)
+-Lowercasing text<br>
+-Removing special characters, digits, HTML tags<br>
+-Replacing common currency/number symbols (e.g., $ → dollar, ₹ → rupee)<br>
+-Decontracting (e.g., "won't" → "will not")<br>
+-Tokenization and stemming (if needed)<br>
+-Removing stopwords (optional)<br>
 
 ---
 
 ## Feature Extraction
 
 Two main methods are used:
--CountVectorizer (BoW): Represents text as a frequency count of words.
--TfidfVectorizer: Applies Term Frequency-Inverse Document Frequency weighting to highlight important terms.
+
+-CountVectorizer (BoW): Represents text as a frequency count of words.<br>
+-TfidfVectorizer: Applies Term Frequency-Inverse Document Frequency weighting to highlight important terms.<br>
 
 Both unigram and bigram tokenizations are explored.
 
