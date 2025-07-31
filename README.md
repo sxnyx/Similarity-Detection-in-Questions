@@ -57,30 +57,25 @@ This notebook walks through the process of:
 
 ---
 
-## ✨ Preprocessing Highlights
+##  Preprocessing Highlights
 
-The `preprocess()` function performs:
+-The preprocessing pipeline includes:
+-Lowercasing text
+-Removing special characters, digits, HTML tags
+-Replacing common currency/number symbols (e.g., $ → dollar, ₹ → rupee)
+-Decontracting (e.g., "won't" → "will not")
+-Tokenization and stemming (if needed)
+-Removing stopwords (optional)
 
-- Normalization of currency symbols and large numbers
-- Decontraction (e.g., "isn't" → "is not")
-- Lowercasing and trimming
-- HTML tag stripping using BeautifulSoup
-- Regex-based noise removal
+---
 
-```python
-def preprocess(q):
-    q = str(q).lower().strip()
-    q = q.replace('%', ' percent').replace('$', ' dollar ')
-    q = q.replace('₹', ' rupee ').replace('€', ' euro ').replace('@', ' at ')
-    q = q.replace('[math]', '')
-    q = re.sub(r'([0-9]+)000000000', r'\1b', q)
-    q = re.sub(r'([0-9]+)000000', r'\1m', q)
-    q = re.sub(r'([0-9]+)000', r'\1k', q)
-    q = BeautifulSoup(q, 'lxml').get_text()
-    q = re.sub(r'[^a-zA-Z]', ' ', q)
-    q = re.sub(r'\s+', ' ', q)
-    return q
-```
+## Feature Extraction
+
+Two main methods are used:
+-CountVectorizer (BoW): Represents text as a frequency count of words.
+-TfidfVectorizer: Applies Term Frequency-Inverse Document Frequency weighting to highlight important terms.
+
+Both unigram and bigram tokenizations are explored.
 
 ---
 
